@@ -1,7 +1,7 @@
 import React from 'react';
 import Image1 from '../assets/gallery/21.jpg';
 import Image3 from '../assets/gallery/2.jpeg';
-import Image2 from '../assets/WhatsApp Image 2024-02-22 at 6.45.19 PM.jpeg';
+import Image2 from '../assets/gallery/3.jpeg';
 import Image4 from '../assets/gallery/4.jpeg';
 import Image5 from '../assets/gallery/1.jpeg';
 import Image6 from '../assets/gallery/6.jpeg';
