@@ -52,8 +52,8 @@ function ServicesSection() {
                                 <h3 className="h4">Agriculture</h3>
 
                                 <p>
-                                Harnessing renewable resources, we power progress sustainably. Solar arrays, wind farms, and smart grids are our tools for a cleaner tomorrow.
-                                </p>
+                                
+Cultivating resilience, we promote regenerative practices. Our farms yield nutritious food while preserving soil health and biodiversity.                                </p>
                             </div>
 
                         </div>
@@ -66,7 +66,8 @@ function ServicesSection() {
                                 <h3 className="h4">Green Energy</h3>
 
                                 <p>
-                                Cultivating resilience, we promote regenerative practices. Our farms yield nutritious food while preserving soil health and biodiversity.
+
+                                        Harnessing renewable resources, we power progress sustainably. Solar arrays, wind farms, and smart grids are our tools for a cleaner tomorrow.                        
                                 </p>
                             </div>
 
