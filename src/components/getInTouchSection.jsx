@@ -1,8 +1,42 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
+import emailjs from 'emailjs-com';
+import {toast} from 'react-toastify'
+import LoadingAnimation from './loadingAnimation';
+import Slide from 'react-reveal/Slide'
 
 function GetInTouchSection() {
+    const [name, setName] = useState("");
+    const [number, setNumber] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const form = useRef();
+
+    const HandleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true)
+        
+        emailjs.sendForm('service_fqgz5v1', 'template_9ja0936', form.current, 'HyJNVEb3b_y2zdlB0')
+        .then((result) => {
+            setLoading(false)
+            toast.success("Message envoyé", {theme: "dark"})
+            setEmail("")
+            setName("")
+            setMessage("")
+            setNumber("")
+        }).catch((err) => {
+            // console.log(err)
+            setLoading(false)
+            console.log(err);
+            toast.error("error ! Message not sent, try again later");
+      });
+    }
+
     return (
+        <Slide bottom>
         <section id="contact" className="s-contact target-section">
+
+                {loading && <LoadingAnimation/>}
 
                 <div className="row section-header section-header--dark">
                     <div className="column lg-12">
@@ -14,14 +48,14 @@ function GetInTouchSection() {
                             Drop us a line at <a href="mailto:#0">Safricon.Sagrico@gmail.com</a>.
                         </h1>
                         <br/>
-                        <form>
-                            <input className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Full name' type='text' required/>
-                            <input className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Email' type='email' required/>
-                            <input className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Phone number' type='number'/>
-                            <textarea className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Message'>
+                        <form ref={form} onSubmit={HandleSubmit}>
+                            <input value={name} name="from_name" onChange={(e) => setName(e.target.value)} className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Full name' type='text' required/>
+                            <input value={email} name="from_email"  onChange={(e) => setEmail(e.target.value)} className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Email' type='email' required/>
+                            <input value={number} name="from_number"  onChange={(e) => setNumber(e.target.value)} className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Phone number' type='number'/>
+                            <textarea value={message} name="message"  onChange={(e) => setMessage(e.target.value)} className='u-fullwidth text-center' style={{backgroundColor: "white"}} placeholder='Message'>
 
                             </textarea>
-                            <button type='submit btn--primary btn'>Send Message</button>
+                            <button disabled={loading} type='submit btn--primary btn'>Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -83,6 +117,7 @@ function GetInTouchSection() {
 
 
             </section>
+            </Slide>
 
         
     )

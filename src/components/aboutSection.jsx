@@ -1,14 +1,16 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 function AboutSection() {
     return (
-        <section id="about" className="s-about target-section">
+        <Fade bottom>
+            <section id="about" className="s-about target-section">
 
             <div className="row s-about__content" data-animate-block>
                 <div className="column lg-12">
                     <h2 className="text-pretitle">About Us</h2>
                     <p className="s-about__desc">
-                    At <span>Safricon & Sagrigo </span>, we are passionate about building a sustainable future. 
+                    At <span>Safricon & Sagrico </span>, we are passionate about building a sustainable future. 
                     Our mission is to create lasting impact by integrating construction, 
                     green energy, and agriculture solutions.
                     </p>
@@ -19,7 +21,8 @@ function AboutSection() {
                 </div> 
             </div> 
 
-        </section> 
+            </section> 
+        </Fade>
     )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Slide from 'react-reveal/Slide'
 
 function HeroSection() {
     return (
@@ -7,23 +8,28 @@ function HeroSection() {
                 <div className="s-intro__bg rellax" data-rellax-speed="-5"></div>
 
                 <div className="row s-intro__content">
+                    <Slide bottom>
+                        <div className="column lg-12 s-intro__content-inner">
+                            <h3 className="s-intro__pretitle">We Are <span style={{color: "#6CFFA9"}}>Safricon&Sagrico</span>.</h3>
+                            <h1 className="s-intro__title">
+                            We build a  <br/>
+                            Sustainable Future.
+                            </h1>	
 
-                    <div className="column lg-12 s-intro__content-inner">
-                        <h3 className="s-intro__pretitle">We Are <span style={{color: "#6CFFA9"}}>Safricon&Sagrico</span>.</h3>
-                        <h1 className="s-intro__title">
-                        We build a  <br/>
-                        Sustainable Future.
-                        </h1>	
-
-                        <div className="s-intro__more">
-                            <a className="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
-                                Learn More
-                            </a>
-                        </div>	
-                    </div> 
+                            <Slide top delay={500}>
+                            <div className="s-intro__more">
+                                <a className="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
+                                    Learn More
+                                </a>
+                            </div>
+                            </Slide>	
+                        </div> 
+                    </Slide>
+                    
 
                 </div>
-
+                <Slide left>
+                    
                 <ul className="s-intro__social">
                     <li>
                         <a href="#0">
@@ -56,6 +62,8 @@ function HeroSection() {
                         </a>
                     </li> */}
                 </ul>  
+                
+                </Slide>
 
                 <div className="s-intro__scroll">
                     <a href="#about" className="smoothscroll">

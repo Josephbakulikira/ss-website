@@ -2,8 +2,10 @@ import React from 'react'
 import {MdConstruction, MdAgriculture  } from 'react-icons/md'
 import { LuLeafyGreen } from "react-icons/lu";
 import { FaPeopleCarry } from "react-icons/fa";
+import Fade from 'react-reveal/Fade'
 function ServicesSection() {
     return (
+        <Fade bottom>
         <section id="services" className="s-services">
 
                 <div className="s-services__bg"></div>
@@ -89,6 +91,7 @@ function ServicesSection() {
                 </div> 			
 
             </section>
+            </Fade>
     )
 }
 

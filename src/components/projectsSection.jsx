@@ -14,9 +14,11 @@ import Image6 from '../assets/gallery/6.jpeg';
 // import Image13 from '../assets/gallery/13.jpeg';
 // import Image14 from '../assets/gallery/14.jpeg';
 // import Image15 from '../assets/gallery/15.jpeg';
+import Fade from 'react-reveal/Fade'
 
 function ProjectSection({children}) {
     return (
+        <Fade>
         <section id="portfolio" className="s-portfolio">
 
                 <div className="s-portfolio__header">
@@ -168,7 +170,8 @@ function ProjectSection({children}) {
                 {children}
 
             </section>
+            </Fade>
     )
 }
 
-export default ProjectSection
+export default ProjectSection;

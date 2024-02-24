@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import {useContext, useEffect, useState} from "react";
 import {UserContext} from "./UserContext";
 import LogoImage from './assets/SS - LIGHT.png'
+import {Fade, Slide} from 'react-reveal'
 
 export default function Header({toggle, switchToggle}) {
   const {setUserInfo,userInfo} = useContext(UserContext);
@@ -46,22 +47,25 @@ export default function Header({toggle, switchToggle}) {
     // </header>
     <header className="s-header">
 
-            <div className="s-header__logo">
+            <Slide top>
+                <div className="s-header__logo">
                 <a className="logo" href="index.html">
                     <img src={LogoImage} alt="Homepage"/>
                 </a>
             </div>
-
+            
             <a onClick={switchToggle} className="s-header__menu-toggle" href="#0">
                 <span className="s-header__menu-text">Menu</span>
                 <span className="s-header__menu-icon"></span>
             </a>
+            </Slide>
 
             <nav className="s-header__nav">
 
                 <span onClick={switchToggle} href="#0" className="s-header__nav-close-btn" title="close"><span>Close</span></span>
                 <h3>Safricon & Sagrico.</h3>
 
+                <Slide right>
                 <ul className="s-header__nav-list">
                     <li><Link to="/" className="smoothscroll">Home</Link></li>
                     <li><Link to="/about" className="smoothscroll">About</Link></li>
@@ -69,11 +73,12 @@ export default function Header({toggle, switchToggle}) {
                     <li><Link to="/gallery" className="smoothscroll">Works</Link></li>
                     <li><Link to="/contact" className="smoothscroll">Contact</Link></li>
                 </ul>
+                </Slide>
 
                 <p>
                 
                 </p>
-
+                
                 <ul className="s-header__social">
                     <li>
                         <a href="#0">
