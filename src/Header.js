@@ -49,9 +49,9 @@ export default function Header({toggle, switchToggle}) {
 
             <Slide top>
                 <div className="s-header__logo">
-                <a className="logo" href="index.html">
+                <Link className="logo" to="/">
                     <img src={LogoImage} alt="Homepage"/>
-                </a>
+                </Link>
             </div>
             
             <a onClick={switchToggle} className="s-header__menu-toggle" href="#0">
@@ -67,11 +67,11 @@ export default function Header({toggle, switchToggle}) {
 
                 <Slide right>
                 <ul className="s-header__nav-list">
-                    <li><Link to="/" className="smoothscroll">Home</Link></li>
-                    <li><Link to="/about" className="smoothscroll">About</Link></li>
-                    <li><Link to="/services" className="smoothscroll">Services</Link></li>
-                    <li><Link to="/gallery" className="smoothscroll">Works</Link></li>
-                    <li><Link to="/contact" className="smoothscroll">Contact</Link></li>
+                    <li><Link onClick={switchToggle} to="/" className="smoothscroll">Home</Link></li>
+                    <li><Link onClick={switchToggle} to="/about" className="smoothscroll">About</Link></li>
+                    <li><Link onClick={switchToggle} to="/services" className="smoothscroll">Services</Link></li>
+                    <li><Link onClick={switchToggle} to="/gallery" className="smoothscroll">Gallery</Link></li>
+                    <li><Link onClick={switchToggle} to="/contact" className="smoothscroll">Contact</Link></li>
                 </ul>
                 </Slide>
 

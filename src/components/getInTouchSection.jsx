@@ -45,7 +45,7 @@ function GetInTouchSection() {
                         <h1 className="text-display-title">
                             Have an idea or an epic project in mind? Talk to us. 
                             Let’s work together and make something great. 
-                            Drop us a line at <a href="mailto:#0">Safricon.Sagrico@gmail.com</a>.
+                            Drop us a line at <a href="mailto:#0">chris123mush@gmail.com</a>.
                         </h1>
                         <br/>
                         <form ref={form} onSubmit={HandleSubmit}>

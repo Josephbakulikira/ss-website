@@ -20,7 +20,7 @@ export default function Layout() {
       <Header toggle={toggle} switchToggle={()=>setToggle(!toggle)} />
       {/* <div class="top-shadow"></div> */}
       <section id="content" className="s-content">
-        <HeroSection/>
+        <HeroSection heroText="" image=""/>
         <AboutSection/>
         <ServicesSection/>
         <ProjectSection>

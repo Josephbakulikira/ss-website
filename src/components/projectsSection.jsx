@@ -1,7 +1,7 @@
 import React from 'react';
 import Image1 from '../assets/gallery/21.jpg';
-import Image2 from '../assets/gallery/2.jpeg';
-import Image3 from '../assets/gallery/3.jpeg';
+import Image3 from '../assets/gallery/2.jpeg';
+import Image2 from '../assets/WhatsApp Image 2024-02-22 at 6.45.19 PM.jpeg';
 import Image4 from '../assets/gallery/4.jpeg';
 import Image5 from '../assets/gallery/1.jpeg';
 import Image6 from '../assets/gallery/6.jpeg';
@@ -46,7 +46,7 @@ function ProjectSection({children}) {
                             <div className="brick folio-item" >
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-shutterbug.jpg" Title="Shutterbug" data-size="1050x700">
+                                    <a className="folio-item__thumb-link"  href="#intro"  Title="Shutterbug" data-size="1050x700">
                                         <img src={Image1}  alt=""/>
                                     </a>
                                 </div>
@@ -54,7 +54,7 @@ function ProjectSection({children}) {
                                     <div className="folio-item__cat">Agriculture</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">
@@ -66,15 +66,15 @@ function ProjectSection({children}) {
                             <div className="brick folio-item">
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-yellowwall.jpg" Title="Yellow Wall" data-size="1050x700">
-                                        <img src={Image2} alt=""/>
+                                    <a className="folio-item__thumb-link" href="#intro"  Title="Yellow Wall" data-size="1050x700">
+                                        <img src={Image6} alt=""/>
                                     </a>
                                 </div>
                                 <div className="folio-item__info">
                                     <div className="folio-item__cat">Construction</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">
@@ -86,7 +86,7 @@ function ProjectSection({children}) {
                             <div className="brick folio-item">
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-architecture.jpg" Title="Architecture" data-size="1050x700">
+                                    <a className="folio-item__thumb-link" href="#intro" Title="Architecture" data-size="1050x700">
                                         <img src={Image3}  alt=""/>
                                     </a>
                                 </div>
@@ -94,7 +94,7 @@ function ProjectSection({children}) {
                                     <div className="folio-item__cat">Construction</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">
@@ -106,7 +106,7 @@ function ProjectSection({children}) {
                             <div className="brick folio-item">
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-minimalismo.jpg" Title="Minimalismo" data-size="1050x700">
+                                    <a className="folio-item__thumb-link"  href="#intro"  Title="Minimalismo" data-size="1050x700">
                                         <img src={Image4}  alt=""/>
                                     </a>
                                 </div>
@@ -114,7 +114,7 @@ function ProjectSection({children}) {
                                     <div className="folio-item__cat">Construction</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">
@@ -125,7 +125,7 @@ function ProjectSection({children}) {
                             <div className="brick folio-item">
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-skaterboy.jpg" Title="Skaterboy" data-size="1050x700">
+                                    <a className="folio-item__thumb-link" href="#intro" Title="Skaterboy" data-size="1050x700">
                                         <img src={Image5} alt=""/>
                                     </a>
                                 </div>
@@ -133,7 +133,7 @@ function ProjectSection({children}) {
                                     <div className="folio-item__cat">Construction</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">
@@ -145,15 +145,15 @@ function ProjectSection({children}) {
                             <div className="brick folio-item">
 
                                 <div className="folio-item__thumb">
-                                    <a className="folio-item__thumb-link" href="images/portfolio/gallery/g-salad.jpg" Title="Salad" data-size="1050x700">
-                                        <img src={Image6} alt=""/>
+                                    <a className="folio-item__thumb-link" href="#intro" Title="Salad" data-size="1050x700">
+                                        <img src={Image2} alt=""/>
                                     </a>
                                 </div>
                                 <div className="folio-item__info">
                                     <div className="folio-item__cat">Construction</div>
                                     <h4 className="folio-item__title">Safricon&Sagrico</h4>
                                 </div>
-                                <a href="https://www.behance.net/" title="Project Link" className="folio-item__project-link">
+                                <a href="#intro" title="Project Link" className="folio-item__project-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform:"",msFilter:""}}><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
                                 </a>
                                 <div className="folio-item__caption">

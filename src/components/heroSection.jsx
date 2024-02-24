@@ -1,15 +1,18 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide'
+import { Link } from 'react-router-dom'
+import Background from '../assets/bg-1.jpg'
 
-function HeroSection() {
+function HeroSection({heroText, image}) {
+    // console.log(image)
     return (
       <section id="intro" className="s-intro target-section">
 
-                <div className="s-intro__bg rellax" data-rellax-speed="-5"></div>
+                <div className="s-intro__bg rellax" style={{backgroundImage: `url(${image === '' ? Background : image})`}} data-rellax-speed="-5"></div>
 
                 <div className="row s-intro__content">
                     <Slide bottom>
-                        <div className="column lg-12 s-intro__content-inner">
+                        {heroText === "" ? <div className="column lg-12 s-intro__content-inner">
                             <h3 className="s-intro__pretitle">We Are <span style={{color: "#6CFFA9"}}>Safricon&Sagrico</span>.</h3>
                             <h1 className="s-intro__title">
                             We build a  <br/>
@@ -18,12 +21,26 @@ function HeroSection() {
 
                             <Slide top delay={500}>
                             <div className="s-intro__more">
-                                <a className="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
+                                <Link to='/about' className="smoothscroll btn btn--stroke s-intro__more-btn">
                                     Learn More
-                                </a>
+                                </Link>
                             </div>
                             </Slide>	
-                        </div> 
+                        </div> : <div className="column lg-12 s-intro__content-inner">
+                            <h3 className="s-intro__pretitle">Welcome  to <span style={{color: "#6CFFA9"}}>Safricon&Sagrico</span>.</h3>
+                            <h1 className="s-intro__title">
+                            {heroText}
+                            </h1>	
+
+                            <Slide top delay={500}>
+                            <div className="s-intro__more">
+                                <Link to='/' className="smoothscroll btn btn--stroke s-intro__more-btn">
+                                    Go Back
+                                </Link>
+                            </div>
+                            </Slide>	
+                        </div>
+                        }
                     </Slide>
                     
 
